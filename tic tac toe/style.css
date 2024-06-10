@@ -1,0 +1,85 @@
+/* Set the background image and style the body */
+body {
+    font: 14px 'Century Gothic', Futura, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://i.pinimg.com/564x/67/c7/b6/67c7b6abd04012aeb8891ded3c660885.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+  }
+  
+  /* Style the game container */
+  .game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Style the game board */
+  .game-board {
+    margin-bottom: 20px;
+  }
+  
+  /* Style the rows of the board */
+  .board-row {
+    display: flex;
+  }
+  
+  /* Style the squares */
+  .square {
+    background: #f3eded;
+    border: 2px solid #555;
+    float: left;
+    font-size: 48px;  /* Increased font size */
+    font-weight: bold;
+    line-height: 100px;  /* Increased line height */
+    height: 100px;  /* Increased height */
+    margin-right: -2px;
+    margin-top: -2px;
+    padding: 0;
+    text-align: center;
+    width: 100px;  /* Increased width */
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .square:hover {
+    background: #c8bbbb;
+  }
+  
+  .square:focus {
+    outline: none;
+  }
+  
+  /* Style the game info section */
+  .game-info {
+    text-align: center;
+  }
+  
+  #status {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  #restart {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background: #ff4500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  #restart:hover {
+    background: #ff6347;
+  }
+  
